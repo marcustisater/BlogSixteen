@@ -14,11 +14,16 @@ function blogsixteen_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
-	$wp_customize->add_setting( 'blogsixteen_logo' ); // Add setting for logo uploader
+	$wp_customize->add_setting( 'blogsixteen_logo' , array ( 'default' => '',
+    	'transport' => 'postMessage',	
+    	'sanitize_callback' => 'esc_url_raw'
+    )); 
 	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'blogsixteen_logo', array(
-			'label'    => __( 'Add a logotype (Replaces Titel & Slogan)', 'm1' ),
+			'label'    => __( 'Add a logotype (Replaces Titel & Slogan)', 'blogsixteen' ),
 			'section'  => 'title_tagline',
 			'settings' => 'blogsixteen_logo',
+			'transport' => 'postMessage',
+			'sanitize_callback' => 'esc_url_raw',
 	) ) );
 }
 add_action( 'customize_register', 'blogsixteen_customize_register' );

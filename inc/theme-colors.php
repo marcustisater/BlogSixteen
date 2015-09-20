@@ -12,7 +12,8 @@ function blogsixteen_register_theme_customizer( $wp_customize ) {
     $wp_customize->add_setting(
         'blogsixteen_link_color',
         array(
-            'default'     => '#000000'
+            'default'     => '#000000',
+            'sanitize_callback' => 'esc_url_raw'
         )
     );
 
@@ -23,7 +24,8 @@ function blogsixteen_register_theme_customizer( $wp_customize ) {
             array(
                 'label'      => __( 'Link Color', 'blogsixteen' ),
                 'section'    => 'colors',
-                'settings'   => 'blogsixteen_link_color'
+                'settings'   => 'blogsixteen_link_color',
+                'sanitize_callback' => 'esc_url_raw'
             )
         )
     );
@@ -31,7 +33,8 @@ function blogsixteen_register_theme_customizer( $wp_customize ) {
     $wp_customize->add_setting(
         'blogsixteen_headline_color',
         array(
-            'default'     => '#000000'
+            'default'     => '#000000',
+            'sanitize_callback' => 'esc_url_raw'
         )
     );
 
@@ -42,7 +45,8 @@ function blogsixteen_register_theme_customizer( $wp_customize ) {
             array(
                 'label'      => __( 'Headline Color', 'blogsixteen' ),
                 'section'    => 'colors',
-                'settings'   => 'blogsixteen_headline_color'
+                'settings'   => 'blogsixteen_headline_color',
+                'sanitize_callback' => 'esc_url_raw'
             )
         )
     );
@@ -51,7 +55,8 @@ function blogsixteen_register_theme_customizer( $wp_customize ) {
     $wp_customize->add_setting(
         'blogsixteen_text_color',
         array(
-            'default'     => '#000000'
+            'default'     => '#000000',
+            'sanitize_callback' => 'esc_url_raw'
         )
     );
 
@@ -62,7 +67,8 @@ function blogsixteen_register_theme_customizer( $wp_customize ) {
             array(
                 'label'      => __( 'Text Color', 'blogsixteen' ),
                 'section'    => 'colors',
-                'settings'   => 'blogsixteen_text_color'
+                'settings'   => 'blogsixteen_text_color',
+                'sanitize_callback' => 'esc_url_raw'
             )
         )
     );
@@ -71,7 +77,8 @@ function blogsixteen_register_theme_customizer( $wp_customize ) {
     $wp_customize->add_setting(
         'blogsixteen_main_color',
         array(
-            'default'     => '#000000'
+            'default'     => '#000000',
+            'sanitize_callback' => 'esc_url_raw'
         )
     );
 
@@ -82,7 +89,8 @@ function blogsixteen_register_theme_customizer( $wp_customize ) {
             array(
                 'label'      => __( 'Main Component Color', 'blogsixteen' ),
                 'section'    => 'colors',
-                'settings'   => 'blogsixteen_main_color'
+                'settings'   => 'blogsixteen_main_color',
+                'sanitize_callback' => 'esc_url_raw'
             )
         )
     );
