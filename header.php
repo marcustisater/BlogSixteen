@@ -24,12 +24,6 @@
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'blogsixteen' ); ?></a>
 
-	<nav id="site-navigation-secondary" class="secondary-navigation main-navigation" role="navigation">
-		<?php
-		wp_nav_menu( array('container_class' => 'menu-footer',
-		'theme_location' => 'secondary') ); ?>
-	</nav>
-
 	<header id="masthead" class="site-header" role="banner">
    <div class="header-content">
 			<div class="site-branding">

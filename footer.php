@@ -14,7 +14,7 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<a href="#" class="scrollToTop icon-chevron-up"> <?php printf('Back To Top') ?></a> 
+		<a href="#" class="scrollToTop icon-chevron-up"> <span> <?php printf('Back To Top') ?> </span> </a> 
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'blogsixteen' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'blogsixteen' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>

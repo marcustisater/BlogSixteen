@@ -108,7 +108,6 @@ function blogsixteen_customizer_css() {
         h1,h2,h3,h4,h5 { color: <?php echo get_theme_mod ( 'blogsixteen_headline_color' ); ?>; }
         #site-navigation a, #site-navigation a:visited { color: <?php echo get_theme_mod ( 'blogsixteen_main_color' ); ?>; }
         .reply a, button, input[type="button"], input[type="reset"], input[type="submit"] { border-color: <?php echo get_theme_mod ( 'blogsixteen_main_color' ); ?>; background-color: <?php echo get_theme_mod ( 'blogsixteen_main_color' ); ?>; }
-        .reply a:hover, button:hover,input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover { border-color: <?php echo get_theme_mod ( 'blogsixteen_main_color' ); ?>; color: <?php echo get_theme_mod ( 'blogsixteen_main_color' ); ?>; background-color: #fff; }
     </style>
     <?php
 }

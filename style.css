@@ -502,7 +502,7 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: #000;
 	text-decoration: none;
 }
 
@@ -833,12 +833,9 @@ a:active {
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
-.widget {
-	margin: 0 0 1.5em;
-}
 
 .widget:first-of-type {
-	border-top: 2px solid #000;
+	border-top: 3px solid #000;
 }
 
 /* Make sure select elements fit in widgets. */
@@ -1090,10 +1087,9 @@ object {
 --------------------------------------------------------------*/
 
 #page {
-	max-width: 1280px;
+	width: 90%;
+	max-width: 960px;
 	margin: 0 auto;
-	padding: 0 20px;
-	background-color: #fff;
 }
 
 #colophon {
@@ -1250,7 +1246,7 @@ object {
 
 .widget {
 	border-bottom: 3px solid #222;
-	padding: .5em 0 1em 0;
+	padding: 1em 0;
 }
 
 h1.site-title {
@@ -1276,27 +1272,6 @@ h1.site-title {
 --------------------------------------------------------------*/
 
 .comment-list {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: row;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
-	-webkit-flex-wrap: nowrap;
-	    -ms-flex-wrap: nowrap;
-	        flex-wrap: nowrap;
-	-webkit-align-content: flex-start;
-	    -ms-flex-line-pack: start;
-	        align-content: flex-start;
-	-webkit-flex-wrap: wrap;
-	    -ms-flex-wrap: wrap;
-	        flex-wrap: wrap;
-	-webkit-justify-content: space-around;
-	    -ms-flex-pack: distribute;
-	        justify-content: space-around;
 	list-style-type: none;
 }
 
@@ -1309,11 +1284,7 @@ h1.site-title {
 	background: #e5e5e5;
 	padding: 1em;
 	margin: 1.2em 0;
-	max-width: 300px;
-}
-
-.comment-author {
-	text-align: center;
+	max-width: 500px;
 }
 
 .comment-author .fn, .comment-author .says {
@@ -1322,11 +1293,15 @@ h1.site-title {
 }
 
 .comment-author img {
-	display: block;
+	display: inline-block;
 	width: 75px;
 	height: 75px;
 	border-radius: 100%;
-	margin: .5em auto;
+	margin: .5em 0;
+}
+
+.comment-content {
+	clear: both;
 }
 
 .reply a {
@@ -1351,8 +1326,7 @@ ol.children {
 }
 
 ol.children .comment-body {
-	background: #fff;
-	padding: 5px;
+	border-top: 3px solid royalblue;
 }
 
 ol.children .reply {
@@ -1369,6 +1343,10 @@ ol.children .comment-author img {
 
 .scrollToTop {
 	padding: .5em 0;
+}
+
+.scrollToTop span {
+	font-family: 'Roboto', sans-serif;
 }
 
 .search-form:after {

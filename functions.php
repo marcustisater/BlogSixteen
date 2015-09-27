@@ -44,8 +44,7 @@ function blogsixteen_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'primary' => esc_html__( 'Primary Menu', 'blogsixteen' ),
-		'secondary' => esc_html__('Secondary Menu', 'blogsixteen'),
+		'primary' => esc_html__( 'Primary Menu', 'blogsixteen' ) 
 	) );
 
 	/*
