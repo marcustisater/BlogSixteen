@@ -24,7 +24,7 @@ html {
 }
 
 body {
-	margin: 20px;
+	margin:0;
 }
 
 article,
@@ -1055,25 +1055,55 @@ object {
 }
 
 #colophon {
-	height: 150px;
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-	padding: 20px;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: column;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
+	margin: 20px 0 0 0;
+  background: #eee;
+  text-align: center;
+}
+
+#footer-widgets {
+	background: black;
+	padding: 20px 0 100px;
+}
+
+#footer-widgets h3 {
+	color: #fff;
+	font-size: 40px;
+	text-transform: uppercase;
+}
+
+.footer-widget-container {
+	width: 90%;
+	max-width: 960px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.footer-widget-container .widget {
+	border: 0;
+}
+
+.footer-widget-right,
+.footer-widget-left {
+	width: 90%;
+	margin: 0 2% 2% 0;
+	background: #222;
+	color: #b4b4b4;
+	padding: 40px;
+}
+
+.footer-widget-container .widget h2 {
+	color: #fff;
+	margin: 0;
+	text-align: left;
+}
+
+.footer-widget-container a {
+	color: #b4b4b4;
+	text-decoration: underline;
+}
+
+.footer-content {
+	padding: 40px 0;
 }
 
 #masthead {
@@ -1149,6 +1179,18 @@ object {
 }
 
 @media only screen and (min-width : 768px) {
+
+	.footer-widget-right,
+	.footer-widget-left {
+		display: inline-block;
+		width: 44%;
+		margin: 0 2% 0 0;
+		vertical-align: top;
+		background: #222;
+		color: #b4b4b4;
+		padding: 40px;
+	}
+
 	#secondary {
 		width: 25%;
 		margin-left: 5%;
