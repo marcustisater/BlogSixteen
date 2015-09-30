@@ -15,17 +15,9 @@
  </div><!-- #page -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="footer-content">
-			<a href="#" class="scrollToTop icon-chevron-up"> <span> <?php printf('Back To Top') ?> </span> </a>
-			<div class="site-info">
-				<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'blogsixteen' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'blogsixteen' ), 'WordPress' ); ?></a>
-				<span class="sep"> | </span>
-				<?php printf( esc_html__( 'Theme: %1$s', 'blogsixteen' ), 'blogsixteen', ''); ?>
-			</div><!-- .site-info -->
-			<?php wp_footer(); ?>
-		</div>
+
 		<div id="footer-widgets">
-			<h3> I love WordPress </h3>
+			<h3> <?php bloginfo( 'description' ); ?> </h3>
 			<div class="footer-widget-container">
 				<div class="footer-widget-left">
 				<?php
@@ -41,6 +33,17 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="footer-content">
+			<a href="#" class="scrollToTop icon-chevron-up"> </a>
+			<div class="site-info">
+				<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'blogsixteen' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'blogsixteen' ), 'WordPress' ); ?></a>
+				<span class="sep"> | </span>
+				<?php printf( esc_html__( 'Theme: %1$s', 'blogsixteen' ), 'blogsixteen', ''); ?>
+			</div><!-- .site-info -->
+			<?php wp_footer(); ?>
+		</div>
+		
 	</footer><!-- #colophon -->
 
 <?php wp_footer(); ?>

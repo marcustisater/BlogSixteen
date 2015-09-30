@@ -583,7 +583,7 @@ a:active {
 }
 
 .site-branding {
-	padding: 0 0 2.5em 10px;
+	padding: 0 0 1em 10px;
 }
 
 .main-navigation li.current_page_item a,
@@ -1080,6 +1080,7 @@ object {
 
 .footer-widget-container .widget {
 	border: 0;
+	text-align: left;
 }
 
 .footer-widget-right,
@@ -1241,7 +1242,6 @@ object {
 }
 
 .blog .post p {
-	color: #aaa;
   font-family: 'Roboto', sans-serif;
   letter-spacing: -.02em;
   line-height: 1.4;
@@ -1347,6 +1347,30 @@ ol.children .comment-author img {
 
 .scrollToTop {
 	padding: .5em 0;
+	display: block;
+	width: 100px;
+	height: 100px;
+	background: #222;
+	background: rgba(34,34,34,0.8);
+	border-radius: 100%;
+	color: #fff;
+	margin: 1em auto;
+	position: relative;
+}
+
+.scrollToTop:hover {
+	transition: .2 ease-in;
+	background: rgba(34,34,34,0.6);
+	background: #222;
+	color: #fff;
+}
+
+.scrollToTop:before {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 25px;
+	font-size: 40px;
 }
 
 .scrollToTop span {
