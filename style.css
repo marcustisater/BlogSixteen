@@ -205,7 +205,7 @@ input[type="search"]::-webkit-search-decoration {
 }
 
 fieldset {
-	border: 1px solid #c0c0c0;
+	border: 1px solid silver;
 	margin: 0 2px;
 	padding: 0.35em 0.625em 0.75em;
 }
@@ -396,9 +396,9 @@ input[type="reset"],
 input[type="submit"] {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
-	background-color: royalblue;
+	background-color: #4169e1;
  	color: #fff;
- 	border: 1px solid royalblue;
+ 	border: 1px solid #4169e1;
  	text-transform: uppercase;
  	text-align: center;
 	padding: .6em 1em .4em;
@@ -408,8 +408,9 @@ button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-	background: royalblue;
+	background: #4169e1;
 	color: #fff;
+	border: 1px solid #4169e1;
 }
 
 button:focus,
@@ -420,7 +421,7 @@ button:active,
 input[type="button"]:active,
 input[type="reset"]:active,
 input[type="submit"]:active {
-	background: royalblue;
+	background: #4169e1;
  	color: #fff;
 }
 
@@ -433,6 +434,7 @@ textarea {
 	color: #666;
 	border: 1px solid #ccc;
 	border-radius: 3px;
+	outline-color: #e5e5e5;
 }
 
 input[type="text"]:focus,
@@ -442,6 +444,7 @@ input[type="password"]:focus,
 input[type="search"]:focus,
 textarea:focus {
 	color: #111;
+	border: 1px solid #4169e1;
 }
 
 input[type="text"],
@@ -491,7 +494,7 @@ a {
 a:hover,
 a:focus,
 a:active {
-	color: midnightblue;
+	color: #191970;
 }
 
 a:focus {
@@ -509,7 +512,13 @@ a:active {
 
 .main-navigation {
 	clear: both;
-	display: block;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	border-bottom: 1px solid #ccc;
 }
 
 .main-navigation ul {
@@ -616,13 +625,13 @@ a:active {
 }
 
 .main-navigation ul ul:after {
-	border-color: rgba(255, 255, 255, 0);
+	border-color: hsla(0,0%,100%,0);
 	border-bottom-color: #fff;
 	border-width: 9px;
 	margin-left: -9px;
 }
 .main-navigation ul ul:before {
-	border-color: rgba(10, 12, 13, 0);
+	border-color: rgba(10,12,13,0);
 	border-bottom-color: #0a0c0d;
 	border-width: 12px;
 	margin-left: -12px;
@@ -715,7 +724,7 @@ a:active {
 --------------------------------------------------------------*/
 /* Text meant only for screen readers. */
 .screen-reader-text {
-	clip: rect(1px, 1px, 1px, 1px);
+	clip: rect(1px,1px,1px,1px);
 	position: absolute !important;
 	height: 1px;
 	width: 1px;
@@ -725,7 +734,7 @@ a:active {
 .screen-reader-text:focus {
 	background-color: #f1f1f1;
 	border-radius: 3px;
-	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	box-shadow: 0 0 2px 2px rgba(0,0,0,.6);
 	clip: auto !important;
 	color: #21759b;
 	display: block;
@@ -969,13 +978,15 @@ object {
 	display: block;
 }
 
+.header-content {
+	width: 100%;
+}
+
 /* Burger */
 
 .menu-toggle {
 	-webkit-transform: rotate(0deg);
-	-ms-transform: rotate(0deg);
 	    transform: rotate(0deg);
-	-webkit-transition: .5s ease-in-out;
 	transition: .5s ease-in-out;
 	border: 0;
 	background: #fff;
@@ -1006,9 +1017,7 @@ object {
 	 filter: alpha(opacity=100);
 	 left: 0;
 	 -webkit-transform: rotate(0deg);
-	 -ms-transform: rotate(0deg);
 	     transform: rotate(0deg);
-	 -webkit-transition: .25s ease-in-out;
 	 transition: .25s ease-in-out;
  }
 
@@ -1027,7 +1036,6 @@ object {
 .toggled .menu-toggle span:nth-child(1) {
   top: 18px;
   -webkit-transform: rotate(120deg);
-  -ms-transform: rotate(120deg);
       transform: rotate(120deg);
 }
 
@@ -1040,7 +1048,6 @@ object {
 .toggled .menu-toggle span:nth-child(3) {
   top: 18px;
   -webkit-transform: rotate(-120deg);
-  -ms-transform: rotate(-120deg);
       transform: rotate(-120deg);
 }
 
@@ -1061,7 +1068,7 @@ object {
 }
 
 #footer-widgets {
-	background: black;
+	background: #000;
 	padding: 20px 0 100px;
 }
 
@@ -1108,11 +1115,9 @@ object {
 }
 
 #masthead {
-	display: -webkit-box;
 	display: flex;
 	-webkit-align-items: center;
 	-ms-flex-align: center;
-	-webkit-box-align: center;
 	        align-items: center;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -1140,11 +1145,10 @@ object {
 	}
 
 	.header-content {
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: reverse;
+		margin: 0 auto;
 		-webkit-flex-direction: column-reverse;
-		    -ms-flex-direction: column-reverse;
-		        flex-direction: column-reverse;
+		-ms-flex-direction: column-reverse;
+		flex-direction: column-reverse;
 	}
 	.main-navigation a {
 		text-align: center;
@@ -1162,21 +1166,18 @@ object {
 }
 
 .secondary-navigation {
-	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
 	text-align: right;
 	float: right;
 	padding-top: 1.5em;
-	-webkit-box-align: end;
 	-webkit-align-items: flex-end;
-	    -ms-flex-align: end;
-	        align-items: flex-end;
-	-webkit-box-pack: end;
+	-ms-flex-align: end;
+	    align-items: flex-end;
 	-webkit-justify-content: flex-end;
-	    -ms-flex-pack: end;
-	        justify-content: flex-end;
+	-ms-flex-pack: end;
+	    justify-content: flex-end;
 }
 
 @media only screen and (min-width : 768px) {
@@ -1297,7 +1298,8 @@ h1.site-title {
 }
 
 .comment-author img {
-	display: inline-block;
+	display: block;
+	float: right;
 	width: 75px;
 	height: 75px;
 	border-radius: 100%;
@@ -1311,16 +1313,16 @@ h1.site-title {
 .reply a {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
-	background-color: royalblue;
+	background-color: #4169e1;
  	color: #fff;
- 	border: 1px solid royalblue;
+ 	border: 1px solid #4169e1;
  	text-transform: uppercase;
  	text-align: center;
 	padding: .6em 1em .4em;
 }
 
 .reply a:hover {
-	background: royalblue;
+	background: #4169e1;
 	color: #fff;
 }
 
@@ -1330,7 +1332,7 @@ ol.children {
 }
 
 ol.children .comment-body {
-	border-top: 3px solid royalblue;
+	border-top: 3px solid #4169e1;
 }
 
 ol.children .reply {
@@ -1351,7 +1353,7 @@ ol.children .comment-author img {
 	width: 100px;
 	height: 100px;
 	background: #222;
-	background: rgba(34,34,34,0.8);
+	background: rgba(34,34,34,.8);
 	border-radius: 100%;
 	color: #fff;
 	margin: 1em auto;
@@ -1360,7 +1362,7 @@ ol.children .comment-author img {
 
 .scrollToTop:hover {
 	transition: .2 ease-in;
-	background: rgba(34,34,34,0.6);
+	background: rgba(34,34,34,.6);
 	background: #222;
 	color: #fff;
 }

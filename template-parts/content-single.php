@@ -12,7 +12,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div id="featured-image">
 	<?php if ( has_post_thumbnail() ) {
-	the_post_thumbnail();
+	the_post_thumbnail('medium');
 	} ?>
 	</div>
 	<header class="entry-header">
@@ -37,4 +37,3 @@
 		<?php blogsixteen_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
-
