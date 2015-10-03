@@ -460,6 +460,10 @@ a:hover, a:active {
 	white-space: nowrap;
 }
 
+.main-navigation a:first-of-type {
+	padding: 7px 10px 7px 5px;
+}
+
 .main-navigation ul ul a {
 	font-weight: 400;
 }
@@ -510,7 +514,7 @@ a:hover, a:active {
 }
 
 .site-branding {
-	padding: 0 0 1em 10px;
+	padding: 0 0 1em 5px;
 }
 
 .main-navigation li.current_page_item a, .main-navigation a:active {
@@ -999,7 +1003,7 @@ embed, iframe, object {
 
 @media only screen and (min-width : 320px) {
 	#masthead {
-		padding: 0.5em 0 2em 25px;
+		padding: 0.5em 0 2em 0;
 	}
 }
 
@@ -1058,7 +1062,6 @@ embed, iframe, object {
 	#main {
 		width: 70%;
 		float: left;
-		padding-left: 35px;
 	}
 
 	.no-sidebar #main {
@@ -1067,7 +1070,7 @@ embed, iframe, object {
 	}
 
 	#masthead {
-		padding: 1.6em 25px;
+		padding: 1.6em 0;
 	}
 
 	.secondary-navigation a {
@@ -1125,7 +1128,6 @@ h1.site-title {
 
 .site-description {
 	margin: 0;
-	padding-left: 1em;
 	font-weight: 300;
 }
 
@@ -1219,7 +1221,7 @@ ol.children .comment-author img {
 	background: rgba(34,34,34,.8);
 	border-radius: 100%;
 	color: #fff;
-	margin: 1em auto;
+	margin: .5em auto 1.5em auto;
 	position: relative;
 }
 
@@ -1238,7 +1240,7 @@ ol.children .comment-author img {
 	font-size: 40px;
 }
 
-.scrolltoTop:focus {
+.scrolltoTop:before:focus {
 	color: #fff;
 }
 
