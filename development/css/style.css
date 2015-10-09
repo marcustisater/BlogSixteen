@@ -1,3 +1,25 @@
+/*
+Theme Name: BlogSixteen
+Theme URI: none
+Author: Marcus Tisater
+Author URI: http://www.marcustisater.se
+Description: Theme based on underscores for a bloggish style.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+Text Domain: blogsixteen
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/*
+*
+* Expanded version of style.css
+*
+ */
+
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300italic,300,500,400italic,700,700italic);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,700,300,500,600);
 
@@ -500,7 +522,7 @@ a:hover, a:active {
 }
 
 .site-branding {
-	display: flex;
+	display: block;
 	padding: 0 0 1em 5px;
 }
 
@@ -749,7 +771,7 @@ a:hover, a:active {
 # Infinite scroll
 --------------------------------------------------------------*/
 /* Globally hidden elements when Infinite Scroll is supported and in use. */
-.infinite-scroll .posts-navigation, .infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */
+.infinite-scroll .posts-navigation, .infinite-scroll.neverending .site-footer { /* Theme  (when set to scrolling) */
 	display: none;
 }
 
@@ -950,14 +972,15 @@ embed, iframe, object {
 .footer-widget-container .widget {
 	border: 0;
 	text-align: left;
+	padding: 40px;
+	background: #222;
+	margin: 20px 0;
 }
 
 .footer-widget-right, .footer-widget-left {
 	width: 90%;
 	margin: 0 2% 2% 0;
-	background: #222;
 	color: #b4b4b4;
-	padding: 40px;
 }
 
 .footer-widget-container .widget h2 {
@@ -995,7 +1018,7 @@ h1.site-title {
 @media only screen and (max-width : 37.5em) {
 
 	.site-branding {
-		justify-content: center;
+		margin: 20px 0;
 		text-align: center;
 	}
 
@@ -1026,6 +1049,7 @@ h1.site-title {
 	}
 
 	.main-navigation {
+		display: table-cell;
 		display: flex;
 		justify-content: flex-end;
 		width: 100%;
@@ -1038,7 +1062,6 @@ h1.site-title {
 		width: 44%;
 		margin: 0 2% 0 0;
 		vertical-align: top;
-		background: #222;
 		color: #b4b4b4;
 		padding: 40px;
 	}
