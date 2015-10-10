@@ -14,11 +14,10 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300italic,300,500,400italic,700,700italic);
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,700,300,500,600);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300|Source+Sans+Pro:400,300,700,600,400italic,700italic);
 
 html {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust:     100%;
 }
@@ -203,7 +202,7 @@ td, th {
 --------------------------------------------------------------*/
 body, button, input, select, textarea {
 	color: #404040;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	font-size: calc(14px + 2 * ( (100vw - 420px) / 860));
 	font-size: 1rem;
 	line-height: 1.5;
@@ -222,7 +221,7 @@ body, button, input, select, textarea {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	clear: both;
 }
 
@@ -343,7 +342,7 @@ table {
 # Forms
 --------------------------------------------------------------*/
 button, input[type="button"], input[type="reset"], input[type="submit"] {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 700;
 	background-color: #4169e1;
  	color: #fff;
@@ -396,26 +395,6 @@ a {
 	text-decoration: none;
 }
 
-.entry-content a:after {
-	font-family: 'icomoon';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-	content: '\f054';
-	font-size: 12px;
-	padding-left: .3em;
-	/* Better Font Rendering =========== */
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-.entry-content a:hover:after {
-	padding-left: .6em;
-}
-
 a:focus {
 	outline: thin dotted;
 }
@@ -450,7 +429,7 @@ a:hover, a:active {
 }
 
 .main-navigation a {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
 	display: block;
 	text-decoration: none;
@@ -1105,7 +1084,7 @@ h1.site-title {
 }
 
 .blog .post p {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   letter-spacing: -.02em;
   line-height: 1.4;
   margin: 0;
@@ -1171,7 +1150,7 @@ h1.site-title {
 }
 
 .reply a {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 700;
 	background-color: #4169e1;
  	color: #fff;
@@ -1240,7 +1219,7 @@ ol.children .comment-author img {
 }
 
 .scrollToTop span {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 .search-form:after {
@@ -1254,43 +1233,4 @@ ol.children .comment-author img {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	content: '\f002';
-}
-
-a[href^="http://www.facebook"]:after {
-	content: '\f082';
-}
-
-a[href^="http://www.linkedin"]:after {
-	content: '\f08c';
-}
-
-a[href^="http://www.slack"]:after {
-	content: '\f198';
-}
-
-a[href^="http://www.twitter"]:after {
-	content: '\f099';
-}
-
-a[href^="http://www.instagram"]:after {
-	content: '\f16d';
-}
-
-a[href^="http://www.github"]:after {
-	content: '\f1d3';
-}
-
-a[href^="http://www.instagram"]:after, a[href^="http://www.facebook"]:after, a[href^="http://www.twitter"]:after, a[href^="http://www.github"]:after, a[href^="http://www.slack"]:after, a[href^="http://www.linkedin"]:after {
-	font-family: 'icomoon';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-	/* Better Font Rendering =========== */
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	padding-left: .5em;
-	vertical-align: middle;
 }

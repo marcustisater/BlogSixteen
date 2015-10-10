@@ -53,39 +53,3 @@
 .icon-chevron-down:before {
 	content: "\f078";
 }
-.icon-facebook-square:before {
-	content: "\f082";
-}
-.icon-linkedin-square:before {
-	content: "\f08c";
-}
-.icon-upload:before {
-	content: "\f093";
-}
-.icon-twitter:before {
-	content: "\f099";
-}
-.icon-youtube:before {
-	content: "\f167";
-}
-.icon-instagram:before {
-	content: "\f16d";
-}
-.icon-vimeo-square:before {
-	content: "\f194";
-}
-.icon-slack:before {
-	content: "\f198";
-}
-.icon-wordpress:before {
-	content: "\f19a";
-}
-.icon-git:before {
-	content: "\f1d3";
-}
-.icon-share-alt-square:before {
-	content: "\f1e1";
-}
-.icon-twitch:before {
-	content: "\f1e8";
-}
