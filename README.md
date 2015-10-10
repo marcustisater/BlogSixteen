@@ -1,9 +1,3 @@
-# Hi, I am Blog Sixteen the WordPress Theme.
+# BlogSixteen - WordPress Theme
 
-Customize me with colors through a GUI and create awesome content for you're website. You can set a background-image, decide colors for my buttons, menu, title and text. I use Roboto and Raleway as font for the content. I am modernaly built with flexbox and also maintained on a regular basic to keep up with the latest stuff and to solve bugs and also build new functions for the website.
-
-Developers can use me as a base theme and also work with some of the more modern tools today in a dev-branch. I am based from underscores.me skeleton theme so big shoutout to the guys at Automattic.
-
-I was built in one day so please be open and wait for more awesome updates to come.
-
-Enjoy!
+BlogSixteen is a elegant and clean theme with a simple design. It's built lightweighted on the latests recomendations for WordPress standard and is fully responsive for all screens or any device. You can change the look of BlogSixteen with the customizer and also add you're own logotype. BlogSixteen is activity maintenance to make it compatibility with WordPress and supports with more updates to come from you're requests. If you have any suggestions of questions let me know. It's simple to setup the theme, all you have to do is activate and start customizing.
