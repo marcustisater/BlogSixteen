@@ -427,7 +427,7 @@ a:hover, a:active {
 
 .main-navigation a {
 	font-family: 'Open Sans', sans-serif;
-	font-weight: 600;
+	font-weight: 700;
 	display: block;
 	text-decoration: none;
 	padding: 7px 10px;
@@ -449,6 +449,7 @@ a:hover, a:active {
 .site-branding {
 	float: left;
   padding-top: 1em;
+  max-width: 500px;
 }
 
 #site-navigation-secondary ul ul {
@@ -502,18 +503,6 @@ a:hover, a:active {
 	width: 235px;
 }
 
-.main-navigation ul ul li {
-
-}
-
-.main-navigation li:hover > a, .main-navigation li.focus > a {
-}
-
-.main-navigation ul ul :hover > a, .main-navigation ul ul .focus > a {
-}
-
-.main-navigation ul ul a:hover, .main-navigation ul ul a.focus {
-}
 
 .main-navigation ul li:hover > ul, .main-navigation ul li.focus > ul {
 	left: auto;
@@ -523,8 +512,6 @@ a:hover, a:active {
 	left: 100%;
 }
 
-.main-navigation .current_page_item > a, .main-navigation .current-menu-item > a, .main-navigation .current_page_ancestor > a {
-}
 
 /* Small menu. */
 .menu-toggle, .main-navigation.toggled ul {
@@ -888,23 +875,24 @@ h1.site-title {
 # Responsive
 --------------------------------------------------------------*/
 
-@media only screen and (min-width : 320px) {
-	#masthead {
-		padding: 0.5em 0 2em 0;
-	}
-}
-
+/* max-width ugly */
 @media only screen and (max-width : 37.5em) {
 
 	.site-branding {
 		margin: 20px 0;
 		text-align: center;
+    float: none;
 	}
 
 	.header-content {
 		margin: 0 auto;
 		flex-direction: column-reverse;
 	}
+
+  .main-navigation {
+    float: none;
+  }
+
 	.main-navigation a {
 		text-align: center;
 	}
@@ -932,14 +920,6 @@ h1.site-title {
 		margin-bottom: .5em;
 	}
 
-	.footer-widget-right, .footer-widget-left {
-		display: inline-block;
-		width: 44%;
-		margin: 0 2% 0 0;
-		vertical-align: top;
-		color: #b4b4b4;
-	}
-
 	#secondary {
 		width: 25%;
 		margin-left: 5%;
@@ -962,7 +942,7 @@ h1.site-title {
 	}
 
 	#masthead {
-		padding: .6em 0 1.6em 0;
+		padding: 1.6em 0;
 	}
 
 	.secondary-navigation a {
@@ -980,7 +960,7 @@ h1.site-title {
 	padding: 1.5em 0;
 }
 
-.blog .post:nth-child(1) {
+.blog .post:first-of-type {
 	border-top: 0;
 }
 
@@ -1012,17 +992,11 @@ h1.site-title {
 	border-top: 0;
 }
 
-
 .site-description {
 	margin: 0 0 2em 0;
 	font-weight: 300;
 }
 
-@media only screen and (max-width: 37.5em) {
-	.scrollToTop {
-		padding: 1.5em 0;
-	}
-}
 
 /*--------------------------------------------------------------
 # Comments
