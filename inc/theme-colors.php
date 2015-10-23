@@ -106,7 +106,7 @@ function blogsixteen_customizer_css() {
         a { color: <?php echo get_theme_mod( 'blogsixteen_link_color' ); ?>; }
         body { color: <?php echo get_theme_mod ( 'blogsixteen_text_color' ); ?>; }
         h1,h2,h3,h4,h5 { color: <?php echo get_theme_mod ( 'blogsixteen_headline_color' ); ?>; }
-        #site-navigation a, #site-navigation a:visited { color: <?php echo get_theme_mod ( 'blogsixteen_main_color' ); ?>; }
+        .current_page_item a { color: <?php echo get_theme_mod ('blogsixteen_main_color'); ?>;}
         .reply a, button, input[type="button"], input[type="reset"], input[type="submit"] { border-color: <?php echo get_theme_mod ( 'blogsixteen_main_color' ); ?>; background-color: <?php echo get_theme_mod ( 'blogsixteen_main_color' ); ?>; }
     </style>
     <?php
