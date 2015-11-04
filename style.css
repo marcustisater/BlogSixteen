@@ -832,8 +832,30 @@ embed, iframe, object {
 	margin: 0 auto;
 }
 
+.header-menu,
+.site-branding {
+	width: 90%;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.main-navigation {
+	max-width: 100%;
+	margin: 0 auto;
+	background: #000;
+	padding: 10px 0;
+}
+
+.main-navigation a {
+	color: #fff;
+}
+
 #page.single-post {
 	max-width: 780px;
+}
+
+#masthead {
+	background: #eee;
 }
 
 #colophon {
@@ -891,8 +913,8 @@ h1.site-title {
     margin: 5px 0;
 	}
 
-	.main-navigation {
-		margin-bottom: .5em;
+  .site-content {
+		padding-top: 50px;
 	}
 
 	#secondary {
@@ -917,11 +939,11 @@ h1.site-title {
 	}
 
 	#masthead {
-		padding: 50px 0;
+		padding-top: 50px;
 	}
 
 	.site-branding {
-		padding: 70px 0 35px 0;
+		padding: 40px 0 35px 0;
 	}
 
 	.entry-title {

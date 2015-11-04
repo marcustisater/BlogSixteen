@@ -21,7 +21,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="hfeed site">
+
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'blogsixteen' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
@@ -38,8 +38,12 @@
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+			<div class="header-menu">
+				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+			</div>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
+
+	<div id="page" class="hfeed site">
 
 	<div id="content" class="site-content">
