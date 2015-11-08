@@ -105,8 +105,8 @@ function blogsixteen_widgets_init() {
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
 	) );
 }
 add_action( 'widgets_init', 'blogsixteen_widgets_init' );
@@ -116,8 +116,6 @@ add_action( 'widgets_init', 'blogsixteen_widgets_init' );
  */
 function blogsixteen_scripts() {
 	wp_enqueue_style( 'blogsixteen-style', get_stylesheet_uri() );
-
-	wp_enqueue_style( 'blogsixteen-icons', get_template_directory_uri() . '/css/icon.css');
 
 	wp_enqueue_script( 'blogsixteen-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 

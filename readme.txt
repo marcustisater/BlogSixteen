@@ -31,3 +31,7 @@ BlogSixteen includes support for Infinite Scroll in Jetpack.
 
 * Based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 * normalize.css http://necolas.github.io/normalize.css/, (C) 2012-2015 Nicolas Gallagher and Jonathan Neal, [MIT](http://opensource.org/licenses/MIT)
+
+== IcoMoon - Free used for Fonts ==
+
+The fonts for social media links are under LicenseGPL / CC BY 4.0 created by IcoMoon designed by Keyamoon.
