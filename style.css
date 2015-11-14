@@ -114,15 +114,22 @@ pre {
 	overflow: auto;
 }
 
+label {
+  color: #545454;
+  display: block;
+  padding-bottom: 0.4em;
+}
+
 code, kbd, pre, samp {
 	font-family: monospace, monospace;
 	font-size: 1em;
 }
 
 button, input, optgroup, select, textarea {
-	color: inherit;
-	font: inherit;
-	margin: 0;
+	background-color: #fff;
+  color: #545454;
+  padding: 10px;
+  vertical-align: middle;
 }
 
 button {
@@ -376,7 +383,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, in
 }
 
 input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"] {
-	padding: 3px;
+	padding: 5px;
 }
 
 textarea {
@@ -626,10 +633,6 @@ a:hover, a:active {
 
 .single .byline, .group-blog .byline {
 	display: inline;
-}
-
-.page-content, .entry-content, .entry-summary {
-	margin: 1.5em 0 0;
 }
 
 .page-links {
@@ -1036,17 +1039,7 @@ h1.site-title {
 .reply a {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 700;
-	background-color: #4169e1;
- 	color: #fff;
- 	border: 1px solid #4169e1;
- 	text-transform: uppercase;
- 	text-align: center;
-	padding: .4em .6em;
-}
-
-.reply a:hover {
-	background: #4169e1;
-	color: #fff;
+	color: #1a74ba;
 }
 
 ol.children {
@@ -1069,4 +1062,25 @@ ol.children .comment-author {
 
 ol.children .comment-author img {
 	display: none;
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote p {
+  display: inline;
 }
