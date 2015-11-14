@@ -35,3 +35,7 @@ BlogSixteen includes support for Infinite Scroll in Jetpack.
 == IcoMoon - Free used for Fonts ==
 
 The fonts for social media links are under LicenseGPL / CC BY 4.0 created by IcoMoon designed by Keyamoon.
+
+== Photography ==
+
+The image folder includes a license free image from Marcelo Quinan at unsplash.com used for the header.
