@@ -349,7 +349,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
  	border: 1px solid #4169e1;
  	text-transform: uppercase;
  	text-align: center;
-	padding: .6em 1em .4em;
+	padding: .6em 1em;
 }
 
 button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {

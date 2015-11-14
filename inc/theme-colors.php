@@ -76,7 +76,7 @@ function blogsixteen_register_theme_customizer( $wp_customize ) {
     $wp_customize->add_setting(
         'blogsixteen_header_background',
         array(
-            'default'     => '#eee',
+            'default'     => '#222',
             'sanitize_callback' => 'esc_url_raw'
         )
     );
@@ -93,6 +93,28 @@ function blogsixteen_register_theme_customizer( $wp_customize ) {
             )
         )
     );
+
+    $wp_customize->add_setting(
+        'blogsixteen_header_color',
+        array(
+            'default'     => '#fff',
+            'sanitize_callback' => 'esc_url_raw'
+        )
+    );
+
+    $wp_customize->add_control(
+        new WP_Customize_Color_Control(
+            $wp_customize,
+            'header_color',
+            array(
+                'label'      => __( 'Header Colors (Title,Navigation)', 'blogsixteen' ),
+                'section'    => 'colors',
+                'settings'   => 'blogsixteen_header_color',
+                'sanitize_callback' => 'esc_url_raw'
+            )
+        )
+    );
+
 
 
     $wp_customize->add_setting(
@@ -125,11 +147,12 @@ function blogsixteen_customizer_css() {
     ?>
     <style type="text/css">
         a { color: <?php echo get_theme_mod( 'blogsixteen_link_color' ); ?>; }
-        body { color: <?php echo get_theme_mod ( 'blogsixteen_text_color' ); ?>; }
-        h1,h2,h3,h4,h5, .site-title a, .site-description, .main-navigation a { color: <?php echo get_theme_mod ( 'blogsixteen_headline_color' ); ?>; }
+        body , .main-navigation ul ul a { color: <?php echo get_theme_mod ( 'blogsixteen_text_color' ); ?>; }
+        h1,h2,h3,h4,h5 { color: <?php echo get_theme_mod ( 'blogsixteen_headline_color' ); ?>; }
         .current_page_item a { color: <?php echo get_theme_mod ('blogsixteen_main_color'); ?>;}
         .reply a, button, input[type="button"], input[type="reset"], input[type="submit"] { border-color: <?php echo get_theme_mod ( 'blogsixteen_main_color' ); ?>; background-color: <?php echo get_theme_mod ( 'blogsixteen_main_color' ); ?>; }
         #masthead { background: <?php echo get_theme_mod ('blogsixteen_header_background') ?>; }
+        .site-title a, .site-description, .main-navigation a { color: <?php echo get_theme_mod ('blogsixteen_header_color') ?>; }
     </style>
     <?php
 }
