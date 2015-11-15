@@ -76,7 +76,7 @@ function blogsixteen_register_theme_customizer( $wp_customize ) {
     $wp_customize->add_setting(
         'blogsixteen_header_color',
         array(
-            'default'     => '#fff',
+            'default'     => '#ffffff',
             'sanitize_callback' => 'esc_url_raw'
         )
     );
@@ -131,6 +131,7 @@ function blogsixteen_customizer_css() {
         .current_page_item a { color: <?php echo get_theme_mod ('blogsixteen_main_color'); ?>;}
         button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover { border-color: <?php echo get_theme_mod ( 'blogsixteen_main_color' ); ?>; background-color: <?php echo get_theme_mod ( 'blogsixteen_main_color' ); ?>; }
         .site-title a, .site-description, .main-navigation a { color: <?php echo get_theme_mod ('blogsixteen_header_color') ?>; }
+        .site-description:after { border-color: <?php echo get_theme_mod ('blogsixteen_header_color') ?>; }
     </style>
     <?php
 }
