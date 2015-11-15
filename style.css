@@ -990,6 +990,7 @@ embed, iframe, object {
 
 
 .site-description {
+	color: #fff;
 	font-family: 'Open Sans', sans-serif;
 	margin: 1em 0 2em 0;
 	font-size: 1.2em;
@@ -1007,6 +1008,10 @@ embed, iframe, object {
 
 #masthead {
 	height: 400px;
+}
+
+#masthead a {
+	color: #fff;
 }
 
 /*--------------------------------------------------------------
