@@ -351,12 +351,14 @@ table {
 button, input[type="button"], input[type="reset"], input[type="submit"] {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 700;
-	background-color: #4169e1;
- 	color: #fff;
- 	border: 1px solid #4169e1;
+ 	color: #222;
+	background: transparent;
+ 	border: 1px solid #333;
+	box-shadow: none;
  	text-transform: uppercase;
  	text-align: center;
 	padding: .6em 1em;
+	transition: all .2s ease-in-out;
 }
 
 button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
@@ -432,6 +434,7 @@ a:hover, a:active {
 .main-navigation a {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
+	font-size: 1.2em;
 	display: block;
 	text-decoration: none;
 	padding: 7px 10px;
@@ -837,6 +840,7 @@ embed, iframe, object {
 	width: 90%;
 	max-width: 960px;
 	margin: 0 auto;
+	text-align: center;
 }
 
 .main-navigation {
@@ -855,12 +859,6 @@ embed, iframe, object {
 
 .footer-content {
 	padding: 40px 0;
-}
-
-h1.site-title {
-	font-size: 2.5em;
-	letter-spacing: 1px;
-	margin: 0;
 }
 
 .widget-title {
@@ -882,6 +880,14 @@ h1.site-title {
     float: none;
 	}
 
+	.site-content {
+		margin-top: 1em;
+	}
+
+	#masthead {
+		height: auto;
+	}
+
 	.header-content {
 		margin: 0 auto;
 		flex-direction: column-reverse;
@@ -901,8 +907,9 @@ h1.site-title {
 @media only screen and (min-width : 768px) {
 
 	h1.site-title {
-		font-size: 2.5em;
+		font-size: 3.5em;
     line-height: 1em;
+		letter-spacing: 1px;
     margin: 5px 0;
 	}
 
@@ -987,12 +994,24 @@ h1.site-title {
 
 
 .site-description {
-	margin: 0 0 2em 0;
+	margin: 1em 0 2em 0;
+	font-size: 1.2em;
 	font-weight: 300;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 }
 
+.site-description:after {
+	content: '';
+	display: block;
+	margin: 5px auto;
+	border: 1px solid #eee;
+	max-width: 150px;
+}
+
+#masthead {
+	height: 400px;
+}
 
 /*--------------------------------------------------------------
 # Comments

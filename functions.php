@@ -74,6 +74,9 @@ function blogsixteen_setup() {
 	// Set up the WordPress core custom background feature.
 	add_theme_support( 'custom-header', apply_filters( 'blogsixteen_custom_header_args', array(
 		'default-image' => get_template_directory_uri() . '/images/header-image.jpeg',
+		'width'         => 1500,
+		'height'        => 400,
+		'uploads'       => true,
 	) ) );
 }
 endif; // blogsixteen_setup
