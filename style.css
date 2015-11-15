@@ -14,10 +14,10 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300|Source+Sans+Pro:400,300,700,600,400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300|Lora:400,400italic,700);
 
 html {
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Lora', serif;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust:     100%;
 }
@@ -209,7 +209,7 @@ td, th {
 --------------------------------------------------------------*/
 body, button, input, select, textarea {
 	color: #404040;
-	font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Lora', serif;
 	font-size: calc(14px + 2 * ( (100vw - 420px) / 860));
 	font-size: 1rem;
 	line-height: 1.5;
@@ -349,7 +349,7 @@ table {
 # Forms
 --------------------------------------------------------------*/
 button, input[type="button"], input[type="reset"], input[type="submit"] {
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Lora', serif;
 	font-weight: 700;
  	color: #222;
 	background: transparent;
@@ -885,7 +885,7 @@ embed, iframe, object {
 	}
 
 	#masthead {
-		height: auto;
+		height: auto !important;
 	}
 
 	.header-content {
@@ -943,10 +943,6 @@ embed, iframe, object {
 		text-align: center;
 	}
 
-	.entry-title {
-		margin-top: 0;
-	}
-
 	.secondary-navigation a {
 		font-size: 14px;
 		font-weight: 400;
@@ -980,7 +976,7 @@ embed, iframe, object {
 }
 
 .blog .post p {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Lora', serif;
   letter-spacing: -.02em;
   line-height: 1.4;
   margin: 0;
@@ -1052,7 +1048,7 @@ embed, iframe, object {
 }
 
 .reply a {
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Lora', serif;
 	font-weight: 700;
 	color: #1a74ba;
 }
