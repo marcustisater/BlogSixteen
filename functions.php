@@ -138,6 +138,14 @@ function blogsixteen_sidebar_body_class( $classes ) {
 }
 
 /**
+ * Add editor styles
+ */
+function blogsixteen_add_editor_styles() {
+    add_editor_style( 'editor-style.css' );
+}
+add_action( 'admin_init', 'blogsixteen_add_editor_styles' );
+
+/**
  * Custom template tags for this theme.
  */
 require get_template_directory() . '/inc/template-tags.php';
