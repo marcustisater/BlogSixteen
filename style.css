@@ -434,7 +434,6 @@ a:hover, a:active {
 .main-navigation a {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
-	font-size: 1.2em;
 	display: block;
 	text-decoration: none;
 	padding: 7px 10px;
@@ -445,7 +444,8 @@ a:hover, a:active {
 	padding: 7px 10px 7px 5px;
 }
 
-.main-navigation ul ul a {
+#masthead .main-navigation ul ul a {
+	color: #222;
 	font-weight: 400;
 	text-align: left;
 }
@@ -1007,7 +1007,7 @@ embed, iframe, object {
 }
 
 #masthead {
-	height: 400px;
+	height: 375px;
 }
 
 #masthead a {

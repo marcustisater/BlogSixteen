@@ -75,7 +75,7 @@ function blogsixteen_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'blogsixteen_custom_header_args', array(
 		'default-image' => get_template_directory_uri() . '/images/header.jpeg',
 		'width'         => 1500,
-		'height'        => 400,
+		'height'        => 375,
 		'uploads'       => true,
 	) ) );
 }
