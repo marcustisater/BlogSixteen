@@ -94,6 +94,29 @@ function blogsixteen_register_theme_customizer( $wp_customize ) {
         )
     );
 
+    $wp_customize->add_setting(
+        'blogsixteen_header_background_color',
+        array(
+            'default'     => '#ffffff',
+            'sanitize_callback' => 'esc_url_raw'
+        )
+    );
+
+    $wp_customize->add_control(
+        new WP_Customize_Color_Control(
+            $wp_customize,
+            'background_color',
+            array(
+                'label'      => __( 'Header Background', 'blogsixteen' ),
+                'section'    => 'colors',
+                'settings'   => 'blogsixteen_header_background_color',
+                'sanitize_callback' => 'esc_url_raw'
+            )
+        )
+    );
+
+
+
 
 
     $wp_customize->add_setting(
@@ -132,6 +155,8 @@ function blogsixteen_customizer_css() {
         button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover { border-color: <?php echo get_theme_mod ( 'blogsixteen_main_color' ); ?>; background-color: <?php echo get_theme_mod ( 'blogsixteen_main_color' ); ?>; }
         .site-title a, .site-description, .main-navigation a { color: <?php echo get_theme_mod ('blogsixteen_header_color') ?>; }
         .site-description:after { border-color: <?php echo get_theme_mod ('blogsixteen_header_color') ?>; }
+        #masthead { background-repeat: no-repeat; background-size: cover; background-image: url('<?php header_image(); ?>'); ;}
+        #masthead { background-color: <?php echo get_theme_mod ('blogsixteen_header_background_color') ?>; }
     </style>
     <?php
 }

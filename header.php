@@ -17,7 +17,6 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <?php wp_head(); ?>
-<style> #masthead { background-repeat: no-repeat; background-size: cover; background-image: url('<?php header_image(); ?>'); ;} </style>
 </head>
 
 <body <?php body_class(); ?>>
@@ -28,7 +27,7 @@
 		<div class="site-branding">
 			<?php if ( get_theme_mod( 'blogsixteen_logo' ) ) : ?>
 				  <a href="<?php echo esc_url( home_url( '/' ) ); ?>" id="site-logo" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-				    <img src="<?php echo get_theme_mod( 'blogsixteen_logo' ); ?>" width="150px" height:"auto" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
+				    <img src="<?php echo get_theme_mod( 'blogsixteen_logo' ); ?>" width="250px" height:"auto" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
 				  </a>
 				  <?php else : ?>
 				  <hgroup>

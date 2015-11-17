@@ -19,7 +19,7 @@ function blogsixteen_customize_register( $wp_customize ) {
     	'sanitize_callback' => 'esc_url_raw'
     ));
 	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'blogsixteen_logo', array(
-			'label'    => __( 'Add a logotype (Replaces Titel & Slogan)', 'blogsixteen' ),
+			'label'    => __( 'Add Logotype (Replaces Title & Slogan)', 'blogsixteen' ),
 			'section'  => 'title_tagline',
 			'settings' => 'blogsixteen_logo',
 			'transport' => 'postMessage',

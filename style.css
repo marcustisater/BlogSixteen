@@ -65,7 +65,8 @@ dfn {
 }
 
 h1 {
-	font-size: 2em;
+	font-size: 2.75em;
+	line-height: 1.5em;
 	margin: 0.67em 0;
 }
 
@@ -235,7 +236,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
 	line-height: 1.5;
-	margin: 30px 0;
+	margin: 0 0 45px 0;
 }
 
 dfn, cite, em, i {
@@ -887,7 +888,6 @@ embed, iframe, object {
 # Responsive
 --------------------------------------------------------------*/
 
-/* max-width ugly */
 @media only screen and (max-width : 37.5em) {
 
 	.site-branding {
@@ -924,7 +924,7 @@ embed, iframe, object {
 @media only screen and (min-width : 768px) {
 
 	h1.site-title {
-		font-size: 3.5em;
+		font-size: 3.25em;
     line-height: 1em;
 		letter-spacing: 1px;
     margin: 5px 0;
@@ -943,6 +943,10 @@ embed, iframe, object {
 	#main {
 		width: 63%;
 		float: left;
+	}
+
+	.no-sidebar #main {
+		width: 100%;
 	}
 
 	.no-sidebar#main {
@@ -966,6 +970,10 @@ embed, iframe, object {
 	}
 }
 
+.page-header {
+	margin-bottom: 45px;
+}
+
 /*--------------------------------------------------------------
 # Blog Posts
 --------------------------------------------------------------*/
@@ -984,7 +992,7 @@ embed, iframe, object {
 	margin-top: .5em;
 }
 
-.blog .post h2, .blog .post .entry-content {
+.archive .post h2, .blog .post h2, .blog .post .entry-content {
 	margin: 0;
 }
 
@@ -1023,7 +1031,7 @@ embed, iframe, object {
 }
 
 #masthead {
-	height: 400px;
+	height: 350px;
 }
 
 /*--------------------------------------------------------------
@@ -1142,3 +1150,5 @@ blockquote:before {
 blockquote p {
   display: inline;
 }
+
+.archive
