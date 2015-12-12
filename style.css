@@ -1,9 +1,10 @@
 /*
 Theme Name: BlogSixteen
+Theme URI: http://www.blogsixteen.com
 Author: Marcus Tisater
 Author URI: http://www.marcustisater.se
 Description: BlogSixteen is the new fresh look for a blogish style. Customise it to look whatever you would like. Have fun!
-Version: 1.1.2
+Version: 1.4
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
@@ -439,6 +440,7 @@ a:hover, a:active {
 	white-space: nowrap;
 }
 
+.main-navigation .children a,
 .main-navigation .sub-menu a {
 	background: #222;
 	color: #fff;
@@ -446,20 +448,24 @@ a:hover, a:active {
 	border-bottom: 1px solid #333;
 }
 
+.main-navigation .children a:hover,
 .main-navigation .sub-menu a:hover {
 	background: #fff;
 	color: #222;
 	border-color: #fff;
 }
 
+.main-navigation .children li:nth-child(1):hover:before,
 .main-navigation .sub-menu li:nth-child(1):hover:before {
 	border-bottom-color: #fff;
 }
 
+.main-navigation .children li:nth-child(1):hover:after,
 .main-navigation .sub-menu li:nth-child(1):hover:after {
 	border-bottom-color: #fff;
 }
 
+.main-navigation .children:last-child(1),
 .main-navigation .sub-menu:last-child(1) {
 	border-bottom: 0;
 }
@@ -481,6 +487,8 @@ a:hover, a:active {
 	z-index: 99999;
 }
 
+.main-navigation .children li:nth-child(1):after,
+.main-navigation .children li:nth-child(1):before,
 .main-navigation .sub-menu li:nth-child(1):after,
 .main-navigation .sub-menu li:nth-child(1):before {
 	bottom: 100%;
@@ -493,12 +501,14 @@ a:hover, a:active {
 	pointer-events: none;
 }
 
+.main-navigation .children li:nth-child(1):after,
 .main-navigation .sub-menu li:nth-child(1):after {
 	border-color: hsla(0,0%,100%,0);
 	border-bottom-color: #222;
 	border-width: 10px;
 	margin-left: -10px;
 }
+.main-navigation .children li:nth-child(1):before,
 .main-navigation .sub-menu li:nth-child(1):before {
 	border-color: rgba(34,34,34,0);
 	border-bottom-color: #222;
@@ -506,6 +516,7 @@ a:hover, a:active {
 	margin-left: -16px;
 }
 
+.main-navigation .children ul li:nth-child(1):after, .main-navigation .children ul li:nth-child(1):before,
 .main-navigation .sub-menu ul li:nth-child(1):after, .main-navigation .sub-menu ul li:nth-child(1):before {
 	display: none;
 }
@@ -898,6 +909,10 @@ embed, iframe, object {
     float: none;
 	}
 
+	.site-description:after {
+		margin: 0 auto;
+	}
+
 	.site-content {
 		margin-top: 1em;
 	}
@@ -1158,5 +1173,3 @@ blockquote:before {
 blockquote p {
   display: inline;
 }
-
-.archive
