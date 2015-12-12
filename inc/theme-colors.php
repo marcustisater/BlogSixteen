@@ -165,16 +165,16 @@ add_action( 'customize_register', 'blogsixteen_register_theme_customizer' );
 function blogsixteen_customizer_css() {
     ?>
     <style type="text/css">
-        body { background-color: <?php echo get_theme_mod( 'blogsixteen_body_color' ); ?>; }
-        a { color: <?php echo get_theme_mod( 'blogsixteen_link_color' ); ?>; }
-        body , .main-navigation ul ul a { color: <?php echo get_theme_mod ( 'blogsixteen_text_color' ); ?>; }
-        h1,h2,h3,h4,h5 { color: <?php echo get_theme_mod ( 'blogsixteen_headline_color' ); ?>; }
-        .current_page_item a { color: <?php echo get_theme_mod ('blogsixteen_main_color'); ?>;}
-        button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover { border-color: <?php echo get_theme_mod ( 'blogsixteen_main_color' ); ?>; background-color: <?php echo get_theme_mod ( 'blogsixteen_main_color' ); ?>; }
-        .site-title a, .site-description, .main-navigation a { color: <?php echo get_theme_mod ('blogsixteen_header_color') ?>; }
-        .site-description:after { border-color: <?php echo get_theme_mod ('blogsixteen_header_color') ?>; }
-        #masthead { background-repeat: no-repeat; background-size: cover; background-image: url('<?php header_image(); ?>'); ;}
-        #masthead { background-color: <?php echo get_theme_mod ('blogsixteen_header_background_color') ?>; }
+        body { background-color: <?php echo esc_html (get_theme_mod( 'blogsixteen_body_color' ) ); ?>; }
+        a { color: <?php echo esc_html (get_theme_mod( 'blogsixteen_link_color' ) ); ?>; }
+        body , .main-navigation ul ul a { color: <?php echo esc_html( get_theme_mod ( 'blogsixteen_text_color' ) ); ?>; }
+        h1,h2,h3,h4,h5 { color: <?php echo esc_html (get_theme_mod ( 'blogsixteen_headline_color' ) ); ?>; }
+        .current_page_item a { color: <?php echo esc_html (get_theme_mod ('blogsixteen_main_color' ) ); ?>;}
+        button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover { border-color: <?php echo esc_html (get_theme_mod ( 'blogsixteen_main_color' ) ); ?>; background-color: <?php echo esc_html( get_theme_mod ( 'blogsixteen_main_color' ) ); ?>; }
+        .site-title a, .site-description, .main-navigation a { color: <?php echo esc_html (get_theme_mod ('blogsixteen_header_color') ); ?>; }
+        .site-description:after { border-color: <?php echo esc_html (get_theme_mod ('blogsixteen_header_color') ); ?>; }
+        #masthead { background-repeat: no-repeat; background-size: cover; background-image: url('<?php esc_url(header_image()); ?>'); ;}
+        #masthead { background-color: <?php echo esc_html(get_theme_mod ('blogsixteen_header_background_color') );?>; }
     </style>
     <?php
 }

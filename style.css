@@ -1,6 +1,5 @@
 /*
 Theme Name: BlogSixteen
-Theme URI: none
 Author: Marcus Tisater
 Author URI: http://www.marcustisater.se
 Description: Theme based on underscores for a bloggish style.
@@ -13,8 +12,6 @@ Text Domain: blogsixteen
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
-
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300|Source+Sans+Pro:400,700,300,700italic,400italic);
 
 html {
 	font-family: 'Source Sans Pro', sans-serif;;

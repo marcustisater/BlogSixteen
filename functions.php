@@ -117,6 +117,8 @@ add_action( 'widgets_init', 'blogsixteen_widgets_init' );
  * Enqueue scripts and styles.
  */
 function blogsixteen_scripts() {
+	wp_enqueue_style( 'blogsixteen-google-fonts', 'https://fonts.googleapis.com/css?family=Open+Sans:400,700,300|Source+Sans+Pro:400,700,300,700italic,400italic', false ); 
+
 	wp_enqueue_style( 'blogsixteen-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'blogsixteen-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );

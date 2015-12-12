@@ -27,7 +27,7 @@
 		<div class="site-branding">
 			<?php if ( get_theme_mod( 'blogsixteen_logo' ) ) : ?>
 				  <a href="<?php echo esc_url( home_url( '/' ) ); ?>" id="site-logo" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-				    <img src="<?php echo get_theme_mod( 'blogsixteen_logo' ); ?>" width="250px" height:"auto" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
+				    <img src="<?php echo esc_url( get_theme_mod( 'blogsixteen_logo' ) ); ?>" width="250px" height:"auto" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
 				  </a>
 				  <?php else : ?>
 				  <hgroup>
