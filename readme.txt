@@ -38,7 +38,7 @@ BlogSixteen will be supporting predefined forms for Contact Form 7
 
 == Photography (Images) ==
 
-The image folder includes a license free image from Marcelo Quinan at unsplash.com used for the header.
+The image folder includes a license free image from José Iñesta at unsplash.com used for the header.
 
 == Credits ==
 

@@ -2,7 +2,7 @@
 Theme Name: BlogSixteen
 Author: Marcus Tisater
 Author URI: http://www.marcustisater.se
-Description: Theme based on underscores for a bloggish style.
+Description: BlogSixteen is the new fresh look for a blogish style. Customise it to look whatever you would like. Have fun!
 Version: 1.1.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -417,7 +417,6 @@ a:hover, a:active {
 
 .main-navigation {
 	margin-bottom: 1.5em;
-	text-align: center;
 }
 
 .main-navigation ul {
@@ -861,7 +860,6 @@ embed, iframe, object {
 	width: 90%;
 	max-width: 960px;
 	margin: 0 auto;
-	text-align: center;
 }
 
 .main-navigation {
@@ -964,7 +962,6 @@ embed, iframe, object {
 
 	.site-branding {
 		padding: 40px 0 0 0;
-		text-align: center;
 	}
 
 	.secondary-navigation a {
@@ -1037,8 +1034,8 @@ embed, iframe, object {
 .site-description:after {
 	content: '';
 	display: block;
-	margin: 5px auto;
-	border: 1px solid #eee;
+	margin: 7px 0;
+	border: 2px solid #eee;
 	max-width: 150px;
 }
 

@@ -73,7 +73,7 @@ function blogsixteen_setup() {
 
 	// Set up the WordPress core custom background feature.
 	add_theme_support( 'custom-header', apply_filters( 'blogsixteen_custom_header_args', array(
-		'default-image' => get_template_directory_uri() . '/images/header.jpeg',
+		'default-image' => get_template_directory_uri() . '/images/header.jpg',
 		'width'         => 1200,
 		'height'        => 350,
 		'uploads'       => true,
@@ -117,7 +117,7 @@ add_action( 'widgets_init', 'blogsixteen_widgets_init' );
  * Enqueue scripts and styles.
  */
 function blogsixteen_scripts() {
-	wp_enqueue_style( 'blogsixteen-google-fonts', 'https://fonts.googleapis.com/css?family=Open+Sans:400,700,300|Source+Sans+Pro:400,700,300,700italic,400italic', false ); 
+	wp_enqueue_style( 'blogsixteen-google-fonts', 'https://fonts.googleapis.com/css?family=Open+Sans:400,700,300|Source+Sans+Pro:400,700,300,700italic,400italic', false );
 
 	wp_enqueue_style( 'blogsixteen-style', get_stylesheet_uri() );
 
