@@ -1,5 +1,7 @@
 === BlogSixteen ===
 
+https://wordpress.org/themes/blogsixteen/
+
 Contributors: automattic
 Tags: translation-ready, custom-background, theme-options, custom-menu, post-formats, threaded-comments
 
@@ -18,7 +20,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Frequently Asked Questions ==
 
-= Does this theme support any plugins? =
+= Does this theme support any plugins? = 
 
 BlogSixteen includes support for Infinite Scroll in Jetpack.
 BlogSixteen will be supporting "Carousel Owl 2.0" - developed by Marcus Tisäter
