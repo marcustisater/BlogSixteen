@@ -853,6 +853,12 @@ embed, iframe, object {
 	margin: 0 auto;
 }
 
+.site-branding,
+.main-navigation a ,
+.site-branding a {
+	color: #fff;
+}
+
 .header-menu,
 .site-branding {
 	width: 90%;
@@ -1013,6 +1019,15 @@ embed, iframe, object {
 	margin: 0 0 35px;
 }
 
+.widget_search {
+	border: 0;
+	padding: 0;
+}
+
+.widget_search input[type="search"] {
+	width: 100%;
+	box-sizing: border-box;
+}
 
 .site-description {
 	margin: 1em 0 2em 0;

@@ -97,7 +97,7 @@ function blogsixteen_register_theme_customizer( $wp_customize ) {
     $wp_customize->add_setting(
         'blogsixteen_header_background_color',
         array(
-            'default'     => '#ffffff',
+            'default'     => '#003f4f',
             'sanitize_callback' => 'esc_url_raw'
         )
     );
