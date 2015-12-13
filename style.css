@@ -441,7 +441,7 @@ a:hover, a:active {
 	white-space: nowrap;
 }
 
-.main-navigation a:nth-child(1) {
+.main-navigation li:nth-child(1) a {
 	padding: 8px 12px 8px 0px;
 }
 
