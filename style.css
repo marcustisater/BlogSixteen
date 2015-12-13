@@ -889,7 +889,7 @@ h1.entry-title {
 		font-size: 3.25em;
 	    line-height: 1em;
 		letter-spacing: 1px;
-	    margin: 5px 0;
+	    margin: 5px -5px; /* needs fix */ 
 	}
 
 	.site-description:after {
