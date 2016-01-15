@@ -75,7 +75,7 @@ function blogsixteen_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'blogsixteen_custom_header_args', array(
 		'default-image' => get_template_directory_uri() . '/images/header.jpg',
 		'width'         => 1200,
-		'height'        => 350,
+		'height'        => 400,
 		'uploads'       => true,
 	) ) );
 }
@@ -94,6 +94,17 @@ function blogsixteen_content_width() {
 }
 add_action( 'after_setup_theme', 'blogsixteen_content_width', 0 );
 
+
+/**
+*
+* Read more to posts
+*
+*/
+
+function blogsixteen_new_excerpt_more( $more ) {
+	return ' <a class="read-more" href="' . get_permalink( get_the_ID() ) . '">' . __( 'Read More...', 'blogsixteen' ) . '</a>';
+}
+add_filter( 'excerpt_more', 'blogsixteen_new_excerpt_more' );
 
 /**
  * Register widget area.
@@ -122,6 +133,8 @@ function blogsixteen_scripts() {
 	wp_enqueue_style( 'blogsixteen-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'blogsixteen-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
+
+		wp_enqueue_script( 'blogsixteen-focus', get_template_directory_uri() . '/js/focus.js', array(), '20160130', true );
 
 	wp_enqueue_script( 'blogsixteen-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 

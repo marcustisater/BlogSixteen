@@ -36,11 +36,12 @@
 					</hgroup>
 			<?php endif; ?>
 		</div><!-- .site-branding -->
-		<nav id="site-navigation" class="main-navigation" role="navigation">
+		<nav role="navigation" id="site-navigation" class="main-navigation" aria-label='<?php _e( 'Primary Menu ', 'blogsixteen' ); ?>'>
 			<div class="header-menu">
-				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+				<h1 class="screen-reader-text"><?php _e( 'Primary Menu', 'blogsixteen' ); ?></h1>
+				<?php wp_nav_menu( array( 'theme_location'=>'primary' ) ); ?>
 			</div>
-		</nav><!-- #site-navigation -->
+		</nav>
 	</header><!-- #masthead -->
 
 	<div id="page" class="hfeed site">

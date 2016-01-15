@@ -20,13 +20,13 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Frequently Asked Questions ==
 
-= Does this theme support any plugins? = 
+= Does this theme support any plugins? =
 
 BlogSixteen includes support for Infinite Scroll in Jetpack.
 BlogSixteen will be supporting "Carousel Owl 2.0" - developed by Marcus Tisäter
 BlogSixteen will be supporting predefined forms for Contact Form 7
 
-== Changelog ==
+== Changelog for major releases ==
 
 = 1.0 - May 12 2015 =
 * Initial release
@@ -34,8 +34,12 @@ BlogSixteen will be supporting predefined forms for Contact Form 7
 * Added customiser for header-images, colors and logotype
 * Added more design for theme functions
 * Improvement of dropdown navigation
+= 1.4.5 - January 2016 
+* Added accessibility fixes
+* Added new navigation 
+* Styling adjustments for sub-menus
 
-== Upcoming Release fixes ==
+== Upcoming Release fixes the==
 * Improvement of customiser
 
 == Photography (Images) ==

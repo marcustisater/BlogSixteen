@@ -52,6 +52,48 @@ function blogsixteen_register_theme_customizer( $wp_customize ) {
     );
 
     $wp_customize->add_setting(
+        'blogsixteen_menu_background',
+        array(
+            'default'     => '#333',
+            'sanitize_callback' => 'esc_url_raw'
+        )
+    );
+
+    $wp_customize->add_control(
+        new WP_Customize_Color_Control(
+            $wp_customize,
+            'menu_background',
+            array(
+                'label'      => __( 'Main navigation background', 'blogsixteen' ),
+                'section'    => 'colors',
+                'settings'   => 'blogsixteen_menu_background',
+                'sanitize_callback' => 'esc_url_raw'
+            )
+        )
+    );
+
+    $wp_customize->add_setting(
+        'blogsixteen_menu_color_active',
+        array(
+            'default'     => '#e18728',
+            'sanitize_callback' => 'esc_url_raw'
+        )
+    );
+
+    $wp_customize->add_control(
+        new WP_Customize_Color_Control(
+            $wp_customize,
+            'menu_color_active',
+            array(
+                'label'      => __( 'Main navigation links (active/hover)', 'blogsixteen' ),
+                'section'    => 'colors',
+                'settings'   => 'blogsixteen_menu_color_active',
+                'sanitize_callback' => 'esc_url_raw'
+            )
+        )
+    );
+
+    $wp_customize->add_setting(
         'blogsixteen_body_color',
         array(
             'default'     => '#fafafa',
@@ -175,6 +217,8 @@ function blogsixteen_customizer_css() {
         .site-description:after { border-color: <?php echo esc_html (get_theme_mod ('blogsixteen_header_color') ); ?>; }
         #masthead { background-repeat: no-repeat; background-size: cover; background-image: url('<?php esc_url(header_image()); ?>'); ;}
         #masthead { background-color: <?php echo esc_html(get_theme_mod ('blogsixteen_header_background_color') );?>; }
+        .main-navigation { background-color: <?php echo esc_html(get_theme_mod('blogsixteen_menu_background') ); ?>; }
+        .current_page_item a, .main-navigation a:focus, .main-navigation a:hover { color: <?php echo esc_html(get_theme_mod('blogsixteen_menu_color_active') ); ?>; }
     </style>
     <?php
 }

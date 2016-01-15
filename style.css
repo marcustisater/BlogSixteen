@@ -54,7 +54,7 @@ abbr[title] {
 	border-bottom: 1px dotted;
 }
 
-b, strong {
+b, strong { 
 	font-weight: bold;
 }
 
@@ -418,7 +418,13 @@ a:hover, a:active {
 
 
 .main-navigation {
+	background: #333;
 	margin-bottom: 1.5em;
+}
+
+.current_page_item a ,
+.main-navigation a:hover {
+	color: #e18728;
 }
 
 .main-navigation ul {
@@ -434,15 +440,10 @@ a:hover, a:active {
 
 .main-navigation a {
 	font-family: 'Open Sans', sans-serif;
-	font-weight: 700;
 	display: block;
 	text-decoration: none;
 	padding: 8px 12px;
 	white-space: nowrap;
-}
-
-.main-navigation li:nth-child(1) a  {
-	padding: 8px 12px 8px 0px;
 }
 
 .main-navigation .children a,
@@ -460,13 +461,13 @@ a:hover, a:active {
 	border-color: #fff;
 }
 
-.main-navigation .children li:nth-child(1):hover:before,
-.main-navigation .sub-menu li:nth-child(1):hover:before {
+.main-navigation .children > li:nth-child(1):hover:before,
+.main-navigation .sub-menu > li:nth-child(1):hover:before {
 	border-bottom-color: #fff;
 }
 
-.main-navigation .children li:nth-child(1):hover:after,
-.main-navigation .sub-menu li:nth-child(1):hover:after {
+.main-navigation .children > li:nth-child(1):hover:after,
+.main-navigation .sub-menu > li:nth-child(1):hover:after {
 	border-bottom-color: #fff;
 }
 
@@ -643,7 +644,31 @@ a:hover, a:active {
 
 /* Search widget. */
 .widget_search .search-submit {
-	display: none;
+	clip: rect(1px,1px,1px,1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.widget_search .search-submit:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0;
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
 }
 
 /*--------------------------------------------------------------
@@ -845,6 +870,15 @@ h1.entry-title {
 # Responsive
 --------------------------------------------------------------*/
 
+@media only screen and (min-width: 37.5em) {
+	.main-navigation {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+}
+
 @media only screen and (max-width : 37.5em) {
 
 	.site-branding {
@@ -853,7 +887,6 @@ h1.entry-title {
 		text-align: center;
     	float: none;
 	}
-
 
 	.site-content {
 		margin-top: 1em;
@@ -991,7 +1024,8 @@ h1.entry-title {
 }
 
 #masthead {
-	height: 350px;
+	height: 400px;
+	position: relative;
 }
 
 /*--------------------------------------------------------------
@@ -1108,4 +1142,11 @@ blockquote:before {
 
 blockquote p {
   display: inline;
+}
+
+.read-more {
+	color: #1e73be !important;
+	display: block;
+	text-align: right;
+	margin-top: 10px;
 }
