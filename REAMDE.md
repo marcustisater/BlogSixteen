@@ -6,11 +6,11 @@ Live demo: http://www.blogsixteen.com/
 
 WordPress Theme GPLv2 Ready to use and customize! 
 
-Requires at least: 4.0
-Tested up to: 4.2.2
-Stable tag: 1.0.0
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+* Requires at least: 4.0
+* Tested up to: 4.2.2
+* Stable tag: 1.0.0
+* License: GPLv2 or later
+* License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 ## Installation 
 
